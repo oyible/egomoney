@@ -1,0 +1,176 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    color: #ffffff;
+}
+
+header {
+    height: 100vh;
+    position: relative;
+    background: url('img/bg3.jpg') center center;
+    background-blend-mode: overlay;
+    background-color: #3c66b4;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    max-width: 80dvw;
+    margin: auto;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+
+.humberger{
+    display: none;
+}
+
+.logo {
+    margin-top: 0.3em;
+    font-size: 2em;
+}
+
+
+.nav_list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 2em;
+}
+
+.nav_list li {
+    padding: 2px;
+    margin: 6px;
+    font-size: 1.2em;
+}
+
+.nav_list li span {
+    background-color: #d2691e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-color: chocolate;
+    border-radius: 0.5em;
+    width: 6rem;
+    height: 1.2em;
+}
+
+.welcome {
+    max-width: 80dvw;
+    margin: 0 auto;
+    padding-top: 14rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.welcome_buy {
+    margin-top: 1em;
+    background-color: chocolate;
+    color: #fff;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    width: 10rem;
+    height: 2.2rem;
+}
+
+.welcome h1 {
+    font-size: 6em;
+}
+
+.welcome>p {
+    font-size: 2.2em !important;
+}
+
+
+.social {
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    margin-right: 50px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.social_icon {
+    height: 1.4em;
+    width: 1.4em;
+    margin: 2px;
+}
+
+.more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    bottom: 0px;
+    align-content: center;
+    position: absolute;
+    width: 100%;
+    padding-bottom: 4px;
+}
+
+.more p {
+    letter-spacing: 2px;
+    padding: 2px;
+    font-size: 2em;
+}
+
+.more_icon {
+    height: 2.2em;
+    width: 2.2em;
+}
+
+@media (max-width: 767px) {
+    .nav_list {
+        display: none;
+    }
+
+    .welcome h1 {
+        font-size: 3em;
+    }
+
+    .welcome>p {
+        font-size: 1.2em !important;
+    }
+
+    .more p {
+        letter-spacing: 2px;
+        padding: 2px;
+        font-size: 2em;
+    }
+
+    .more_icon {
+        height: 2em;
+        width: 2em;
+    }
+    .humberger{
+        display: block;
+        height: 2em;
+        width: 2em;
+    }
+}
